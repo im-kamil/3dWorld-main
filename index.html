@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3dWorld</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+        button,p,h2{
+            font-family: 'Playwrite IT Moderna', sans-serif;
+            color: whitesmoke;
+            background: none;
+        }
+        span{
+            background: none;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <section id="section1">
+        <div id="top">
+            <button id="h">3dWorld</button>
+            <button><a href="https://github.com/FurkanKhann/3dWorld">Enter 3dWorld</a></button>
+            <button><a href="https://github.com/FurkanKhann">GitHub</a></button>
+            <button onclick="window.location.href='mailto:khanfurkan090@gmail.com';">Contact</button>
+
+        </div>
+
+        <div id="home">
+            <h2>Welcome to 3dWorld: Explore History in 3D</h2>
+            <br>
+            <p>At 3dWorld, we bring the world's historical treasures to your fingertips through meticulously crafted 3D models of old and historical architectures. Our mission is twofold: to offer a stunningly immersive experience to those unable to visit these sites in person, and to alleviate the environmental impact caused by mass tourism on these delicate locations.</p>
+            <br>
+            <h2>Why 3dWorld?</h2>
+            <br>
+            <p><span>1-</span> Exploration: Step into the past and explore iconic architectural marvels from around the globe in lifelike 3D detail.</p>
+            <p><span>2-</span>Preservation Efforts: By reducing physical foot traffic, we contribute to the preservation and longevity of these cultural landmarks.</p>
+            <p><span>3-</span>Educational Value: Gain a deeper understanding of history and architecture through interactive virtual tours and educational resources.</p>
+            <br>
+            <h2>Join Us</h2>
+            <br>
+             <p>Whether you're an enthusiast seeking historical knowledge or an educator enhancing classroom learning, 3dWorld invites you to discover, learn, and appreciate our shared heritage from the comfort of your screen.</p>
+        </div>
+        
+    </section>
+
+    <section id="section2">
+        <div id="option">
+            <div id="taj">
+                <button class="circle" onclick="window.open('https://meowbilli.github.io/taj/', '_blank');"></button>
+                <h2>Taj Mahal</h2>
+            </div>
+
+             <div id="hintze"> 
+                <button class="circle" onclick="window.open('https://meowbilli.github.io/hintze/', '_blank');"></button>
+                <h2>Hintze Hall</h2>
+            </div>
+
+            <div id="mount">
+                <button class="circle" onclick="window.open('https://meowbilli.github.io/Mount/', '_blank');"></button>
+                <h2>Mont Saint Michel</h2>
+            </div>
+
+            <div id="mar">
+                <button class="circle" onclick="window.open('https://meowbilli.github.io/Galer-a/', '_blank');"></button>
+                <h2>Mar Saba Monastery </h2>
+            </div>
+
+            <div id="temp">
+                <button class="circle" onclick="window.open('https://meowbilli.github.io/Monastery/', '_blank');"></button>
+                <h2>Full León cathedral </h2>
+            </div>
+
+            <div id="rome">
+                <button class="circle" onclick="window.open('https://meowbilli.github.io/Rome/', '_blank');"></button>
+                <h2>Colosseum</h2>
+            </div>
+
+            <div id="hampi">
+                <button class="circle" onclick="window.open('https://meowbilli.github.io/Hampi/', '_blank');"></button>
+                <h2>Stone Chariot in Hampi</h2>
+            </div>
+
+            <div id="leon">
+                <button class="circle" onclick="window.open('https://meowbilli.github.io/Leon/', '_blank');"></button>
+                <h2>Galería de la Basílica de San Isidoro (León)</h2>
+            </div>
+
+            <div id="aqsa">
+                <button class="circle" onclick="window.open('https://meowbilli.github.io/AlAqsa/', '_blank');"></button>
+                <h2>Al Aqsa Mosque</h2>
+            </div>
+           
+        </div>
+        
+
+    </section>
+  
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+            });
+          });
+        });
+      </script>
+</body>
+</html>

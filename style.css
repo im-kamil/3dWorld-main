@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  
+#section1{
+    background-size: cover;
+}
+#top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background: transparent;
+}
+button{
+    border: none;
+    height: auto;
+    width: auto;
+    font-size: larger;
+    background: transparent;
+    color: white;
+}
+button:hover {
+    transform: scale(1.1); /* Magnify the button by 10% on hover */
+    cursor:pointer;
+}
+#h{
+    font-weight: bolder;
+}
+#home{
+    background: transparent;
+    margin: 0% 20% 0% 20% ;
+    padding: 5%;
+    border-radius: 5px;
+}
+#section2{
+    
+    padding: 10% 10% 10% 10%;
+}
+#option {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust as needed */
+    gap: 20px; /* Adjust the gap between items */
+}
+
+#option > div {
+    flex: 0 1 calc(33.33% - 20px); /* Adjust for 3 columns */
+    text-align: center;
+}
+.circle {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; /* Center the image */
+    border-radius: 50%;
+    transition: transform 0.2s; /* Smooth transition for the scale effect */
+}
+
+#taj .circle {
+ background: url('taj.webp') center/cover; /* Adjust background positioning and size */
+}
+#hintze .circle {
+    background: url('hintze.jpg') center/cover; /* Adjust background positioning and size */
+   }
+#mount .circle {
+    background: url('mount.jpeg') center/cover; /* Adjust background positioning and size */
+   }
+#mar .circle {
+    background: url('mar.jpg') center/cover; /* Adjust background positioning and size */
+   }      
+#temp .circle {
+    background: url('images.jpeg') center/cover; /* Adjust background positioning and size */
+   } 
+#rome .circle {
+    background: url('rome.jpeg') center/cover; /* Adjust background positioning and size */
+   }   
+#hampi .circle {
+    background: url('chariot.jpeg') center/cover; /* Adjust background positioning and size */
+   } 
+#leon .circle {
+    background: url('leon.jpeg') center/cover; /* Adjust background positioning and size */
+   }   
+#aqsa .circle {
+    background: url('alaqsa.jpg') center/cover; /* Adjust background positioning and size */
+   } 
+
+body{
+    background-image: linear-gradient(135deg, #434343 10%, #000000 100%);
+}
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+    #option > div {
+        flex: 0 1 calc(50% - 20px); /* Adjust for 2 columns on medium screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #top {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center align items */
+    }
+
+    button {
+        margin: 10px 0; /* Adjust vertical margin for buttons */
+    }
+
+    #option {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center align items */
+    }
+
+    #option > div {
+        flex: 0 1 calc(100% - 20px); /* Adjust for 1 column on smaller screens */
+        margin-bottom: 20px; /* Add space between stacked items */
+    }
+}
+
+body {
+    background-image: linear-gradient(135deg, #434343 10%, #000000 100%);
+    font-family: 'Playwrite IT Moderna', sans-serif; /* Apply font to entire body */
+    color: whitesmoke;
+}
